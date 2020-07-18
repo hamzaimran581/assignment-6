@@ -110,10 +110,9 @@
 // }
 
 // //task 17 
-// var user = prompt ("input")
-// for (i=0; i<user.length; i++){
-// }
-// document.write (user.charAt([i]) ) ;
+// var str = prompt("Enter Any Thing"); 
+// var res = str.charAt(str.length-1); 
+// document.write(res)
 
 // //cahpter 26-30
 // //task 1
@@ -253,6 +252,14 @@
 // var date = new Date();
 // document.write ("current date: " + date);
 
+// // task 12
+// var a = new Date();
+// document.write('<h1>Current Date ;' +'</h1>' + a + '<br>' )
+// var b = new Date();
+// var c = b.setFullYear(1920);
+// document.write( '<h1>100 Years Back ;' + '</h1> ' + ' ' + ' ' + b + '<br>' )
+
+
 // //task 13
 // var x = prompt ("enter your birth date")
 // var y= prompt ("enter your birth month")
@@ -264,6 +271,39 @@
 // var diff = mili - milio ;
 // var days = diff/ (1000*60*60*24*30*12);
 // document.write ( "your age is " + Math.floor(days) ); 
+
+// task 14
+// var a = 'K- Electric';
+// document.write('<h1>' + '<u>' + a + '</u>' +'</h1>')
+// var str = prompt('Enter your name');
+// var res = str.toUpperCase();
+// document.write('<h1>' + 'Costumer Name:' + ' ' + ' ' +  str +'</h1>')
+// var d = new Date();
+// var month = new Array();
+// month[0] = "January";
+// month[1] = "February";
+// month[2] = "March";
+// month[3] = "April";
+// month[4] = "May";
+// month[5] = "June";
+// month[6] = "July";
+// month[7] = "August";
+// month[8] = "September";
+// month[9] = "October";
+// month[10] = "November";
+// month[11] = "December";
+// var n = month[d.getMonth()];
+//  document.write('<h1>' +  'Month  :' + ' ' + n  + '</h1>')
+//  var e = prompt('Number Of Units');
+//  document.write('<h1>'  + 'Number Of Units :' + ' ' + e + '</h1>')
+//  document.write('<h1>'  + 'Charge Per Units :' + ' ' + '16' + '</h1>')
+//  document.write('<br>');
+//  document.write('<br>');
+//  var f = e * 16;
+//  document.write( '<h1>' + 'Net Amount Payable (within Due Date) :'  + ' ' + f + '</h1>' + '<br>')
+//  document.write('<h1>' + ' Late Payment Surcharge :' + '350' + '</h1>' + '<br>')
+// document.write('<h1>' + ' Gross Amount Payable (after Due Date) :' + (f + 350)  + '</h1>')
+
 
 // //cahpter 35-38
 // //task 1
@@ -332,6 +372,16 @@
 // }
 // counting();
 
+// task 8
+
+// var base = prompt('Enter Base of triangle');
+// var per = prompt('Enter Perpendicular of a triangle');
+// function calcHypotenus(base,  per) {
+//     return Math.sqrt(base*base  + per*per);
+// }
+
+// document.write('The hypoteneous of your triangle is ' + calcHypotenus(base,  per));  
+
 // //task 9
 // function area(width , hight){
 //     document.write ("area of triangle = " + width*hight )
@@ -352,3 +402,32 @@
 // palindrome();
 
 //task 11
+// function uppercase(str)
+// {
+//   var array1 = str.split(' ');
+//   var newarray1 = [];
+    
+//   for(var x = 0; x < array1.length; x++){
+//       newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));
+//   }
+//   return newarray1.join(' ');
+// }
+// document.write(uppercase("the quick brown fox"));
+
+// // TASK 12
+
+// function find_longest_word(word)
+// {
+//   var array1 = word.match(/\w[a-z]{0,}/gi);
+//   var result = array1[0];
+
+//   for(var x = 1 ; x < array1.length ; x++)
+//   {
+//     if(result.length < array1[x].length)
+//     {
+//     result = array1[x];
+//     } 
+//   }
+//   return result;
+// }
+// document.write(find_longest_word('Web Development Tutorial'));
